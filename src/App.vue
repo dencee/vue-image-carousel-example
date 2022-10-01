@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <carousel></carousel>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,16 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import Carousel from './components/Carousel.vue'
+
+  export default {
+    components: {
+      Carousel
+    }
+  }
+</script>
 
 <style>
 #app {
